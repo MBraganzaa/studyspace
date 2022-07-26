@@ -1,4 +1,4 @@
-.div__gris {
+/* .div__gris {
     background-color: thistle;
     width: 10rem;
     height: 10rem;
@@ -12,4 +12,24 @@
     border-radius: 50%;
     position: absolute;
     margin: 4.5rem;
+} */
+
+.div__animation {
+    background-color: yellow;
+    width: 10rem;
+    height: 10rem;
+    animation-name: minianimetion;
+    animation-duration: 4s;
+    position :absolute;
+    animation-iteration-count: infinite;
+    animation-timing-function:cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@keyframes minianimetion {
+    0% {background-color: yellow; left: 0; top:0rem;}
+    25% {background-color: orange; left: 20rem; top: 0;}
+    50% {background-color: orangered; left: 20rem; top: 20rem;}
+    75% {background-color: red; left: 0; top: 20rem;}
+    100% {background-color: blueviolet; left:0; top:0rem;}
+    
 }
