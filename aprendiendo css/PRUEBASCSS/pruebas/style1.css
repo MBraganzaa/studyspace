@@ -1,0 +1,72 @@
+
+#conteiner {
+    background-color: burlywood;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#titulo {
+    color: darkorchid; 
+    background-color: brown;
+    margin: 20px;
+    padding: 40px 20px;
+    opacity: 0.5;
+}
+
+.fondo {
+    height: 400px;
+    /* background-color: chocolate;
+    background-image: url(camera.jpg) ;
+    background-size: contain;
+    background-repeat: repeat-y;
+    background-position: right center ; */
+    background: #f00 url(camera.jpg) repeat-y left center;
+    background-size: contain;
+}
+
+.margen {
+    background-color: darkgoldenrod;
+    margin: 15px 20px 25px 30px;
+    padding: 30px 25px 20px 30px;
+    width: 80% center;
+    height: 200px;
+    /*overflow: hidden;*/
+    text-align: center;
+    font-size: x-large;
+}
+.margen h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    text-shadow: 3px 5px 3px ;
+}
+
+ul{
+    background-color: aqua;
+    list-style-type: none;
+    padding-left:0px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 2px solid rgb(192, 41, 41);
+}
+
+th {
+    background-color: crimson;
+    color: white;
+    text-align: left;
+} 
+tr:nth-child(even){
+    background-color: antiquewhite;
+}
+
+tr:hover {
+background-color: cadetblue;
+cursor: pointer;
+}   

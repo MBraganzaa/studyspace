@@ -1,0 +1,119 @@
+
+
+:root {
+    --negro: #393939;
+    --principal:;
+    --secundaria:;
+    --blanco: #ececec;
+	/* Tipografía */
+    --tipo-principal:;
+    --tipo-secundaria:;
+ }
+	/* Las adaptamos al modo oscuro */
+@media (prefers-color-scheme: dark) {
+    :root {
+      --negro: #ececec;
+    }
+ }
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+	/* Configuramos el texto que seleccionamos */
+::-moz-selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+body{
+    background-color: var(--principal);
+    /* font-size: 2.5rem; */
+    line-height: 1.4em;
+}
+
+.header {
+    width: 100%;
+    max-width: 70em;
+    padding: 4em;
+    margin: auto;
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__h1 {
+    background-color: yellow;
+}
+.header__ul {
+    background-color: tomato;
+}
+.header__ul--a {
+    margin: 0 0.5em;
+    background-color: aqua;
+}
+
+.section {
+    width: 100%;
+    max-width: 70em;
+    margin:auto;
+    background-color: crimson;
+    display: grid;
+    grid-template-areas: "a b"
+                         "c d";
+    gap: 1em;
+}
+.section__article--a {
+    background-color: yellow;
+    grid-area: a;
+}
+.section__article--b {
+    background-color: wheat;
+    grid-area: b;
+}
+.section__article--c {
+    background-color: violet;
+    grid-area: c;
+}
+.section__article--d {
+    background-color:slateblue;
+    grid-area: d;
+}
+
+.section__h2 {
+    text-align: center;
+    padding: 1em;
+}
+.section__img {
+    display: block;
+    width: 100%;
+    min-height: 15em;
+    background-color: springgreen;
+    
+}
+.section__p {
+    padding: 1em;
+}
+
+.footer {
+    background-color: yellow;
+    width: 100%;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__p {
+    background-color: aquamarine;
+}
+.footer__a {
+    background-color: yellowgreen;
+}

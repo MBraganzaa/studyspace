@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    color: #eee;
+    background-color: #000;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    margin: 2rem 0;
+    padding: 1rem;
+}
+.header__h1 {
+    transition: all 1s ease;
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 0 0.3rem 1rem rgba(255, 244, 0, 0.8);
+}
+.header__h1:hover {
+    color: #FF5D00 ;
+    text-shadow: 0 0.1rem 1.5rem rgba(255, 93, 0, 0.8);
+}
+
+.section {
+    width: 400px;
+    margin: 0 auto;
+}
+.section__article {
+    transition: all 1s ease;
+    margin: 2rem 0;
+    background-color: #FF5D00;
+    border-radius: 0.6rem;
+    cursor: pointer;
+}
+.section__article:hover {
+    box-shadow: 0 0.1rem 1.5rem rgba(255, 244, 0, 0.8);
+    background-color: #FFDA00 ;
+
+}
+.section__h2 {
+    color: #000;
+    text-align: center;
+    padding: 0.25rem 0;
+}
+.section__p {
+    padding: 0.4rem 1rem;
+}
+.section__img {
+    width: 100%;
+}
+
+.footer {
+    background-color: #FF5D00;
+    padding: 2rem 3rem;
+}
+.footer__a {
+    transition:all 0.5s ease;
+    float: right;
+    color: #000;
+    text-shadow: 0 0.1rem 1rem rgba(5, 5, 5, 0.8);
+}
+.footer__a:hover {
+    color: #FFDA00;
+    text-shadow: 0 0.1rem 1.4rem rgba(255, 244, 0, 0.8);
+}
+.footer__p {
+    color: #000;
+}

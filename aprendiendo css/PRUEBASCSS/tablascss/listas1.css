@@ -1,0 +1,37 @@
+body{
+    background-color: bisque;
+}
+div {
+    font-family:'Times New Roman', Times, serif;
+    font-size: x-large;
+}
+h1 {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 15px 20px 25px 30px;
+    padding: 30px 25px 20px 15px;
+}
+#table {
+    background-color:darkslategrey;
+    border-collapse: collapse;
+    width: 70%;
+    height: 200px;
+    position: relative;
+    margin: 30px 30px 30px 70px;
+    padding: 20px 70px 20px 30px;
+}
+
+tr, th, td {
+    border: 1px solid black;
+    color: #eee;
+}
+td:hover {
+    background-color: darkgray;
+    color: black;
+    cursor: pointer;
+    
+}
+.td:hover {
+    background-color: darkslategrey;
+    cursor:auto;
+}

@@ -1,0 +1,121 @@
+
+:root {
+    --negro: #393939;
+    --principal:;
+    --secundaria:;
+    --blanco: #ececec;
+	/* Tipografía */
+    --tipo-principal:;
+    --tipo-secundaria:;
+ }
+	/* Las adaptamos al modo oscuro */
+@media (prefers-color-scheme: dark) {
+    :root {
+      --negro: #ececec;
+    }
+ }
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+	/* Configuramos el texto que seleccionamos */
+::-moz-selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+body{
+    background-color: var(--principal);
+    /* font-size: 2.5rem; */
+    line-height: 1.4em;
+}
+
+.header {
+    width: 100%;
+    max-width: 70em;
+    padding: 4em;
+    margin: auto;
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__h1 {
+    background-color: aqua;
+} 
+.header__ul {
+    background-color: yellowgreen;
+}
+.header__ul--a {
+    background-color:tomato;
+    margin: 0 0.5em;
+}
+
+.section {
+    width: 100%;
+    max-width: 70em;
+    margin: auto;
+    background-color: violet;
+    display: grid;
+    grid-template-areas: "a d"
+                         "c b";
+    gap: 1em;
+}
+.section__article--a {
+    grid-area: a;
+    background-color: turquoise;
+}
+.section__article--b {
+    grid-area: b;
+    background-color: springgreen;
+}
+.section__article--c {
+    grid-area: c;
+    background-color:saddlebrown;
+}
+.section__article--d {
+    grid-area: d;
+    background-color:blue;
+}
+
+.section__h2 {
+    background-color: crimson;
+    text-align: center;
+    padding: 1em;
+}
+.section__img {
+    background-color:green;
+    display: block;
+    width: 100%;
+    min-height:15em;
+}
+.section__p {
+    padding: 1em;
+}
+
+.footer {
+    background-color: yellow;
+    width: 100%;
+    max-width: 70em;
+    padding: 2em;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__p {
+    background-color: tomato;
+}
+.footer__a {
+    background-color:blueviolet;
+
+}

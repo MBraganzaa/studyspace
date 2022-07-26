@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Playfair+Display:ital,wght@1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background: radial-gradient(circle, rgb(26, 25, 25) 0%, rgb(216, 222, 230) 100%);
+}
+
+header{
+    margin: 0.5rem 1rem 3rem 4rem;
+    padding: 1.5rem 1rem 1rem 0.5rem;
+}
+
+header h1{
+    font-size: 4.5rem;
+    font-family: 'Playfair Display', serif;
+    text-shadow: 0 0 1rem rgba(26, 25, 25, 0.8);
+}
+
+section article{
+    background-color:#00173D ;
+    font-family: 'Nunito', sans-serif;
+    width: 400px;
+    margin: 0 auto;
+    padding: 2rem 0 ;
+}
+
+.input{
+    margin: 0.4rem 3rem;
+    padding: 0.9rem 4rem;
+    background-color: #D7D7D7;
+    color: #000000;
+    border-style: none;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 0.5rem rgba(233, 231, 231, 0.8);
+    cursor: pointer;
+}
+
+.boton{
+    margin: 0.5rem 9rem ;
+    padding: 0.5rem 0.8rem;
+    border-radius: 3rem;
+    border-style: none;
+    box-shadow: 0 0 0.5rem rgba(233, 231, 231, 0.8);
+    cursor: pointer;
+}
+
+.parrafo {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #000000;
+}
+
+.linka{
+    text-decoration: none;
+    color: #eee;
+}
+
+.clearflix{
+    clear:both;
+    height: 9rem;
+}
+
+footer{
+    
+    background-color: #00173D;
+    padding: 2rem 3rem;
+}
+
+footer p{
+    color: #eee;
+    font-size: 1.6rem ;
+    font-family: 'Nunito', sans-serif;
+}

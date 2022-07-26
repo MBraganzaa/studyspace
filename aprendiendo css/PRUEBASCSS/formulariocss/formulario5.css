@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Source+Sans+Pro&display=swap');
+
+:root {
+    --negro: #393939;
+    --principal:#0E6655;
+    --secundaria:#5B2C6F ;
+    --extras:#E5E7E9 ;
+    /* Tipografía */
+    --tipo-principal:'Poppins', sans-serif;
+    --tipo-secundaria:'Source Sans Pro', sans-serif;
+ }
+    /* Las adaptamos al modo oscuro */
+@media (prefers-color-scheme: dark) {
+    :root {
+      --negro: #ececec;
+    }
+ }
+    /* Configuramos el texto que seleccionamos */
+ ::-moz-selection {
+    background-color: var(--principal);
+    color: var(--secundaria);
+  }
+  ::selection {
+    background-color: var(--secundaria);
+    color: var(--principal);
+  }
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+body{
+    background-color: var(--principal);
+    font-size: 2.5rem;
+    line-height: 1.4em;
+
+}
+
+.header{
+    padding: 2rem 3rem;
+}
+.header__h1{
+    font-size: 4rem;
+    font-family: var(--tipo-principal);
+    color: var(--secundaria);
+}
+
+.section{
+    max-width: 400px;
+    margin:0 auto;
+    border-style: none;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.5rem 0.3rem rgba(0, 0, 0, 0.8);
+}
+.section__article{
+    background-color: #393939;
+    text-align: center;
+    
+    
+}
+.section__input{
+    padding: 1rem calc(28% - 1rem);
+    margin: 1rem;
+    color: var(--secundaria);
+}
+.section__button{}
+.section__p{}
+
+.footer{}
+.footer__p{}

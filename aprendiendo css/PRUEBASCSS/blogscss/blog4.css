@@ -1,0 +1,67 @@
+head {
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    margin:0;
+    background-color: #eee;
+    font-family: 'Raleway', sans-serif ;
+}
+
+header{
+    background-color: aqua;
+    padding:2rem 3rem;
+}
+
+header h1{
+    text-align: center;
+    font-size: 4rem;
+}
+
+section{
+    width: 400px;
+    margin:0 auto;
+}
+
+section article img{
+    width: 400px;
+}
+
+section article h2, section article p{
+    margin: 1rem;
+}
+
+section article{
+    transition: box-shadow 0.3s ease;
+    transition: color 0.5s ease;
+    background-color:burlywood;
+    border-radius: 0.3rem;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+section article:hover{
+    box-shadow: 0 0.5rem 1.25rem black;
+    color: blue;
+}
+
+footer{
+    background-color: black;
+    padding: 1rem 2rem;
+    color: #eee;
+}
+
+footer a{
+    transition: color 0.3s ease;
+    float:right;
+    text-decoration: none;
+    color: #eee;
+}
+
+footer p{
+    margin: 0;
+}
+
+footer a:hover{
+    color: blue;
+}

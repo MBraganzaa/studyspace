@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(235,45,128);
+    background: radial-gradient(circle, rgba(235,45,128,1) 0%, rgba(13,105,213,1) 100%);
+}
+
+header{
+    margin: 25px 30px 35px 40px;
+    padding: 40px 35px 30px 25px;
+
+}
+header h1{
+    font-size: 2.3rem;
+    color:#232323;
+}
+img{
+    width: 450px;
+    height: auto;
+}
+
+section article{
+    transition: all 2s ease;
+    background-color: #232323;
+    color: #eee;
+    float:right;
+    margin: 0 12rem 4rem ;
+    padding: 2rem 1rem 0.6rem;
+}
+
+section article:hover{
+    box-shadow: 0 0.7rem 1rem rgba(0, 0, 0, 0.8);
+}
+
+.input{
+    transition: all 1s ease;
+    margin: 3px;
+    padding: 1rem 2rem;
+    border-style: none;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    color: black;
+    cursor: pointer;
+}
+
+.input:hover{
+    background-color: darkslateblue;
+    padding: 1.1rem 2rem;
+}
+
+section article button{
+    transition: all 1.2s ease;
+    background-color: dimgray;
+    color: blue;
+    box-shadow: 0 0.6rem 0.4rem rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 0.7rem;
+    margin: 1rem 1rem 0rem 4.5rem ;
+    border-style: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+section article button:hover{
+    box-shadow: 0 0.6rem 0.4rem rgba(0, 0, 0, 0.8);
+    color: #eee;
+    background-color: blueviolet;
+    padding: 0.6rem 0.7rem;
+}
+
+#pya{
+    text-align: center;
+    color: #eee;
+}
+
+section article a{
+    transition: all 1s ease;
+    text-decoration: none;
+    color:blue;
+}
+
+section article a:hover{
+    color:blueviolet;
+}
+
+.clearflix{
+    clear:both;
+    height: 3rem;
+}
+
+footer{
+    background-color: black;
+    padding: 1rem 2rem;
+    margin: 0;
+    color: #eee;
+}
+
+.grid{
+    display: grid;
+    height: 650px;
+    grid-template-areas: "img form";
+    grid-template-columns: 30% auto;
+}
+
+.img{
+    grid-area: img;
+}
+
+.form{
+    grid-area: form;
+    justify-content:unsafe;
+}
+

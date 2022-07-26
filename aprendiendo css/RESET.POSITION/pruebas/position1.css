@@ -1,0 +1,28 @@
+/* Estilos por defecto para que se vea "bien" */
+.contenedora{
+    width:90%;
+    background:lightgray;
+    border-radius: .5rem;
+    margin: 1em auto;
+}
+.item{
+    background:orange;
+    border-radius: .5rem;
+}
+
+
+.contenedora{
+}
+.contenedora3::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.contenedora3{
+
+}
+.item{
+    width: calc(25% - 2em);
+    float: left;
+    margin: 0 1em;
+}

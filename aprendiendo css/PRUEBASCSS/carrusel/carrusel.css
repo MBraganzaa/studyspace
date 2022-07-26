@@ -1,0 +1,85 @@
+:root {
+    --negro: #393939;
+    --principal:;
+    --secundaria:;
+    --blanco: #ececec;
+	/* Tipografía */
+    --tipo-principal:;
+    --tipo-secundaria:;
+ }
+	/* Las adaptamos al modo oscuro */
+@media (prefers-color-scheme: dark) {
+    :root {
+      --negro: #ececec;
+    }
+ }
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+	/* Configuramos el texto que seleccionamos */
+::-moz-selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+body{
+    background-color: var(--principal);
+    /* font-size: 2.5rem; */
+    line-height: 1.4em;
+}
+
+.carrusel {
+    width: 90%;
+    max-width: 120em;
+    padding: 2em;
+    background-color: violet;
+}
+.carrusel .grande {
+    width:200%;
+    background-color: chocolate;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: all 5s ease;
+}
+.carrusel .img {
+    display: block;
+    width: calc(100% / 2);
+    min-height: 10vh;
+    background-color: burlywood;
+}
+.carrusel .puntos {
+    width: 100%;
+    background-color: darkblue;
+    margin: 1em 0 0;
+    padding: 0.4em;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.carrusel .punto {
+    width: 2em;
+    height: 1em;
+    margin: 1em 1em 0;
+    background-color: chartreuse;
+}
+
+.carrusel .punto.activo{
+    background-color: orange ;
+}

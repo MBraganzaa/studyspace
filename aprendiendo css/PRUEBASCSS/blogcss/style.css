@@ -1,0 +1,84 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: lightgray; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contenedor {
+    background-color: blue;
+    width: 1100px;
+    margin: 0px auto ;
+    border: 1px solid black;
+}
+
+header {
+    background-color: red;
+    height: 100px;
+    width: 100%;
+    text-align: center; /* esta etiqueta hace que el texto se coloque en el medio pero arriba del todo*/
+    line-height: 100px; /* esta etiqueta de altura hace que el texto se coloque en el medio*/
+    color: aquamarine;
+}
+
+nav {
+    background-color: darkgreen;
+    width: 97%;
+    height: 70px;
+}
+
+nav, li, ul {
+    float: left;
+    list-style: none;
+    margin: 10px;
+    line-height: 30px;
+}
+
+.clearflix{ /* con este recurso podemos hacer que una etiqueta se vaya para abajo*/
+    clear:both
+}
+
+#contend {
+    float: left;
+    width: calc(80% - 40px);
+    background-color: chocolate;
+    min-height: 500px;
+    padding: 20px;
+}
+
+.article:first-child { /*Esta etiqueta sirve para seleccionar el primer class*/
+    padding-top: 7px;
+    border-top: 1px solid #eee;
+}
+
+.article {
+    color: antiquewhite;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #eee;
+}
+
+.article h2{
+    font-size: 50px; 
+}
+
+aside {
+    float: left;
+    width: calc(20% - 40px);
+    background-color: darkblue;
+    min-height: 500px;
+    padding: 20px;
+}
+
+footer {
+    background-color: black;
+    color:white;
+    text-align: center;
+    height: 40px ;
+    line-height: 40px;
+}

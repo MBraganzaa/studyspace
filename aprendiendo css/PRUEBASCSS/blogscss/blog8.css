@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:ital,wght@1,700&display=swap');
+
+:root {
+    --negro: #393939;
+    --principal: #1F618D;
+    --secundaria: #A93226;
+    --blanco:#ececec;
+    /* sombras */
+    --sombra:0 0.5em 0.5em rgba(0,0,0,0.8);
+	/* Tipografía */
+    --tipo-principal: 'Playfair Display', serif;
+    --tipo-secundaria: 'Merriweather', serif;
+ }
+	/* Las adaptamos al modo oscuro */
+@media (prefers-color-scheme: dark) {
+    :root {
+      --negro: #ececec;
+    }
+ }
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    vertical-align: baseline;
+    text-decoration: none;
+    font-family: var(--tipo-secundaria);
+}
+
+	/* Configuramos el texto que seleccionamos */
+::-moz-selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+body{
+    background-color: var(--blanco);
+    line-height: 1.4em;
+}
+
+
+.header {
+    width: 100%;
+    max-width:70rem;
+    margin: auto;
+    padding:4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__h1 {
+    color: var(--secundaria);
+    font-size: 4em;
+    font-family: var(--tipo-principal);
+    min-width: 20%;
+}
+.header__nav, .nav {
+    max-width: 25rem;
+}
+
+.nav__a {
+    color: #393939;
+    margin: 0 1rem;
+}
+
+
+.section {
+    width: 100%;
+    max-width: 70%;
+    margin: auto;
+}
+
+.section__article--a {
+    box-shadow: var(--sombra);
+    border-radius: 0.5rem;
+    background-color: var(--principal);
+    min-height: 14rem;
+    margin: 1em 0;
+}
+.section__article--b {
+    box-shadow: var(--sombra);
+    border-radius: 0.5rem;
+    background-color: var(--secundaria);
+    min-height: 14rem;
+    margin: 1em 0;
+
+}
+.section__article--c {
+    box-shadow: var(--sombra);
+    border-radius: 0.5rem;
+    background-color: var(--principal);
+    min-height: 14rem;
+    margin: 1em 0;
+
+}
+.section__article--d {
+    box-shadow: var(--sombra);
+    border-radius: 0.5rem;
+    background-color: var(--secundaria);
+    min-height: 14rem;
+    margin: 1em 0;
+
+}
+
+
+.section__h2 {
+    text-align: center;
+    padding: 1em;
+    font-family: var(--tipo-principal);
+}
+.section__p {
+    padding: 1em 0.5em;
+}
+.section__img {
+    width: 100%;
+    min-height: 10rem;
+    display: block;
+}
+
+.footer {
+    background-color:black;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__a {
+    color: #A93226;
+}
+.footer__p {
+    color: #1F618D;
+}
+

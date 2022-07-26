@@ -1,0 +1,147 @@
+
+
+:root {
+    --negro: #393939;
+    --principal:;
+    --secundaria:;
+    --blanco: #ececec;
+	/* Tipografía */
+    --tipo-principal:;
+    --tipo-secundaria:;
+ }
+	/* Las adaptamos al modo oscuro */
+@media (prefers-color-scheme: dark) {
+    :root {
+      --negro: #ececec;
+    }
+ }
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+	/* Configuramos el texto que seleccionamos */
+::-moz-selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+body{
+    background-color: var(--principal);
+    /* font-size: 2.5rem; */
+    line-height: 1.4em;
+}
+
+.header {
+  background-color: blue;
+  width: 100%;
+  max-width: 70rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__h1 {
+  background-color: yellowgreen;
+  padding: 1rem;
+  margin: 2rem;
+}
+.header__nav {
+  background-color: violet;
+  margin: 2rem;
+  max-width: 20rem;
+}
+.header__nav--a {
+  background-color: aqua;
+  margin: 1rem 0.33rem;
+  
+}
+
+.section {
+  width: 100%;
+  max-width: 70rem;
+  margin: auto;
+  background-color: brown;
+  display: flex;
+  flex-direction: column;
+  
+}
+.section__article--a {
+  background-color: teal;
+  width: 80%;
+  min-height: 15rem;
+  margin: 2rem;
+  padding: 3rem;
+}
+.section__article--b {
+  background-color: aquamarine;
+  width: 80%;
+  min-height: 15rem;
+  margin: 2rem 2rem 2rem calc(20% - 2rem);
+  padding: 3rem;
+}
+.section__article--c {
+  background-color: blueviolet;
+  width: 80%;
+  min-height: 15rem;
+  margin: 2rem;
+  padding: 3rem;
+}
+.section__article--d {
+  background-color: blue;
+  width: 80%;
+  min-height: 15rem;
+  margin: 2rem 2rem 2rem calc(20% - 2rem);
+  padding: 3rem;
+}
+
+.section__h2 {
+  background-color: cornflowerblue;
+  margin: 0.33rem;
+}
+.section__p {
+  margin: 0.33rem;
+}
+.section__img {
+  display: block;
+  background-color: chocolate;
+  width: calc(100%);
+  min-height: 15rem;
+}
+
+.footer {
+  background-color: yellowgreen;
+  width: 100%;
+  max-width: 70rem;
+  padding: 2rem 2rem;
+  margin: auto;
+  text-align: center;
+}
+.footer__p {
+  background-color: red;
+  float: left;
+}
+
+.footer__nav {
+  float: right;
+}
+.footer__a--a {
+  margin: 1rem 0.5rem;
+}
+.footer__a--b {
+  margin: 1rem 0.5rem;
+
+}
+.footer__a--c {
+  margin: 1rem 0.5rem;
+  
+}

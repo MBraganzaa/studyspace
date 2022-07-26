@@ -1,0 +1,97 @@
+
+
+body{
+    margin:0;
+    background-color:#915F78;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background-color: #020029;
+    padding: 2rem 2.5rem;
+}
+
+header h1{
+    text-shadow: 0.1rem 0.8rem 0.3rem rgba(0, 0, 0, 0.7);
+    text-align: center;
+    color: #a8650d;
+}
+.clearflix{
+    clear:both;
+    height: 3rem;
+}
+
+section{
+    transition: box-shadow 0.3s ease;
+    background-color:#6F4794;
+    border-radius: 0.5rem;
+    width: 28rem;
+    margin: 0 auto;
+}
+section:hover{
+    box-shadow: 0.4rem 0.6rem 0.4rem rgba(0, 0, 0, 0.7);
+}
+
+section article{
+    text-align: center;
+    padding: 2rem;
+}
+
+.input{
+    color: #a8650d;
+    transition: all 0.2s ease;
+    border-style: none;
+    background-color: #000018;
+    padding: 1.3rem 1rem;
+    width: 20rem;
+    margin: 0.5rem 0;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+}
+.input:hover{
+    background-color: #020029;
+    font-size: 1.1rem;
+}
+section article button{
+    transition: all 0.3s ease-in;
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 0.4rem 2rem 2rem ;
+    background-color: #a8650d;
+    color: #020029;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+section article button:hover{
+    background: #ff9100;
+    color: #020029;
+    border-radius: 2rem 2rem 0.4rem;
+    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.7);
+}
+
+section article p{
+    font-size: 1.4rem;
+}
+section article a{
+    transition: color 0.2s ease;
+    text-decoration: none;
+    color: #a8650d;
+    text-shadow: 0 0.5rem 0.2rem #000018;
+}
+section article a:hover{
+    color: #020029;
+}
+
+.clearflix{
+    clear:both;
+    height: 3rem;
+}
+
+footer{
+    background-color: #000018;
+    color: #eee;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+}
