@@ -36,20 +36,23 @@
 
 .animation {
     background-color:blue;
-    width: 2rem;
-    height: 2rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     animation-name: animation;
     animation-duration: 4s;
     position: relative;
+    animation-timing-function:cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    animation-delay: 1s;
+    animation-iteration-count:infinite;
 }
 
 @keyframes animation {
-    0% {background-color: blue; left:4rem; top:4rem; width: 3rem;}
-    25% {background-color: aqua; left:4rem; top:8rem; width: 4rem;}
-    50% {background-color: cornflowerblue; left:8rem; top:8rem;}
-    75% {background-color: darkslateblue; left:8rem; top:12rem;}
-    100% {background-color: blueviolet; left:12rem; top:12rem;}
+    0% {background-color: blue; left:4rem; top:4rem; }
+    25% {background-color: aqua; left:4rem; top:8rem; border-radius: 2rem 2rem 0 0; }
+    50% {background-color: cornflowerblue; left:8rem; top:8rem; border-radius: 0 2rem 2rem 0;}
+    75% {background-color: darkslateblue; left:8rem; top:12rem; border-radius: 0 0 2rem 2rem;}
+    100% {background-color: blueviolet; left:12rem; top:12rem; border-radius: 2rem 0 0 2rem;}
 }
 
 
