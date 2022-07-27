@@ -14,7 +14,7 @@
     margin: 4.5rem;
 } */
 
-.div__animation {
+/* .div__animation {
     background-color: yellow;
     width: 10rem;
     height: 10rem;
@@ -32,4 +32,24 @@
     75% {background-color: red; left: 0; top: 20rem;}
     100% {background-color: blueviolet; left:0; top:0rem;}
     
+} */
+
+.animation {
+    background-color:blue;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    animation-name: animation;
+    animation-duration: 4s;
+    position: relative;
 }
+
+@keyframes animation {
+    0% {background-color: blue; left:4rem; top:4rem; width: 3rem;}
+    25% {background-color: aqua; left:4rem; top:8rem; width: 4rem;}
+    50% {background-color: cornflowerblue; left:8rem; top:8rem;}
+    75% {background-color: darkslateblue; left:8rem; top:12rem;}
+    100% {background-color: blueviolet; left:12rem; top:12rem;}
+}
+
+
