@@ -34,7 +34,7 @@
     
 } */
 
-.animation {
+/* .animation {
     background-color:blue;
     width: 4rem;
     height: 4rem;
@@ -53,6 +53,30 @@
     50% {background-color: cornflowerblue; left:8rem; top:8rem; border-radius: 0 2rem 2rem 0;}
     75% {background-color: darkslateblue; left:8rem; top:12rem; border-radius: 0 0 2rem 2rem;}
     100% {background-color: blueviolet; left:12rem; top:12rem; border-radius: 2rem 0 0 2rem;}
+} */
+
+
+.animation {
+    background-color: black;
+    width: 15rem;
+    height: 15rem;
+    border-radius:20%;
+    animation-name:animacion;
+    animation-duration: 12s;
+    position: relative;
+
 }
 
-
+@keyframes animacion {
+    0% {background-color: black; left:0; top:0rem; }
+    10% {background-color: #5a0000; left:2rem; top :4rem; border-radius: 35%;}
+    20% {background-color: rgb(226, 0, 0); left:4rem; top:6rem; border-radius:50%;  }
+    30% {background-color: orangered; left: 6rem ; top:6rem; }
+    40% {background-color: orange; left:50%; top:80%; border-radius: 1rem 1rem 0 0;  }
+    50% {background-color: yellow; left:50%; top: 80%; border-radius:50%; width:4rem; height: 4rem; }
+    60% {background-color: yellowgreen; left:; top:; border-radius:;  }
+    70% {background-color: limegreen; left:; top:; border-radius:;  }
+    80% {background-color: lime; left:; top:; border-radius:;  }
+    90% {background-color: green; left:; top:; border-radius:;  }
+    100% {background-color:rgb(0, 44, 7); left:; top:; border-radius:;  }
+}
