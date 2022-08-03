@@ -121,12 +121,53 @@
 // document.write(nombre)
 
     // parametros 
-function suma(num1, num2){
-    let res = num1 + num2;
-    document.write(res + "<br>") 
-}
+// function suma(num1, num2){
+//     let res = num1 + num2;
+//     document.write(res + "<br>") 
+// }
 
-suma(20, 12)
+// suma(20, 12)
+
+    // programacion orientada a objetos
+class taza {
+    constructor(tamaño,color,capacidadDeRetencion,){
+    this.tamaño = tamaño;
+    this.color = color;
+    this.cdp = capacidadDeRetencion;
+    this.info = `la taza es de un tamaño ${tamaño} , es de un color ${color}. ¿tiene capacidad de retencion? ${capacidadDeRetencion}`;
+    }
+    verinfo(){
+        document.write(this.info)       
+    }
+}
+    // herencia 
+class TazaModerna extends taza {
+    constructor(tamaño,color,capacidadDeRetencion,termica){
+        super(tamaño,color,capacidadDeRetencion);
+        this.termica = null;
+    }
+    set setTermica(newTemperatura){
+        this.termica = newTemperatura;
+    }
+    get getTermica(){
+        return this.termica;
+    }
+
+    tomar(){
+        document.write("gluck!");
+    }
+};
+
+let tazaModerna = new TazaModerna("small","black","si tiene capacidad de retencion","es termica");
+
+// tazaModerna.verinfo()
+
+    //setters
+tazaModerna.setTermica = "no es termica";
+document.write(tazaModerna.getTermica);
+
+    // getters
+
 
                          //-- pruebas ----------------------------
 

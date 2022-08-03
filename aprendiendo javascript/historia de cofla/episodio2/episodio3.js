@@ -35,7 +35,7 @@ let cantidad = prompt(" ¿cuantos alumnos son?");
 let alumnosTotales = [];
 
 for (i = 0; i < cantidad ; i ++){
-    alumnosTotales[i] = [prompt("nombre del alumno" + (i+1)), 0]
+    alumnosTotales[i] = [prompt("nombre del alumno " + (i+1)), 0]s
 }
 
 const tomarAsistencia = (nombre,p)=>{
@@ -56,7 +56,7 @@ for (alumno in alumnosTotales){
     __________presentes: ${alumnosTotales[alumno][1]} <br>
     __________ausencias: ${30 - alumnosTotales[alumno][1]}`
     if (30 - alumnosTotales[alumno][1] > 18){
-        resultado+= "reprobado por inasistencias<br><br>";
+        resultado+= " reprobado por inasistencias<br><br>";
     }
     else {
         resultado+= "<br><br>";
