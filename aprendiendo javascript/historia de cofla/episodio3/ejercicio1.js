@@ -80,3 +80,4 @@ ${celular1.infoAltaGama()}</br>
 ${celular2.infoAltaGama()}</br>
 ${celular3.infoAltaGama()}</br>
 `);
+

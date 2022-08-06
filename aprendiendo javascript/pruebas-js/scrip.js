@@ -129,46 +129,53 @@
 // suma(20, 12)
 
     // programacion orientada a objetos
-class taza {
-    constructor(tamaño,color,capacidadDeRetencion,){
-    this.tamaño = tamaño;
-    this.color = color;
-    this.cdp = capacidadDeRetencion;
-    this.info = `la taza es de un tamaño ${tamaño} , es de un color ${color}. ¿tiene capacidad de retencion? ${capacidadDeRetencion}`;
-    }
-    verinfo(){
-        document.write(this.info)       
-    }
-}
-    // herencia 
-class TazaModerna extends taza {
-    constructor(tamaño,color,capacidadDeRetencion,termica){
-        super(tamaño,color,capacidadDeRetencion);
-        this.termica = null;
-    }
-    set setTermica(newTemperatura){
-        this.termica = newTemperatura;
-    }
-    get getTermica(){
-        return this.termica;
-    }
+// class taza {
+//     constructor(tamaño,color,capacidadDeRetencion,){
+//     this.tamaño = tamaño;
+//     this.color = color;
+//     this.cdp = capacidadDeRetencion;
+//     this.info = `la taza es de un tamaño ${tamaño} , es de un color ${color}. ¿tiene capacidad de retencion? ${capacidadDeRetencion}`;
+//     }
+//     verinfo(){
+//         document.write(this.info)       
+//     }
+// }
+//     // herencia 
+// class TazaModerna extends taza {
+//     constructor(tamaño,color,capacidadDeRetencion,termica){
+//         super(tamaño,color,capacidadDeRetencion);
+//         this.termica = null;
+//     }
+//     set setTermica(newTemperatura){
+//         this.termica = newTemperatura;
+//     }
+//     get getTermica(){
+//         return this.termica;
+//     }
 
-    tomar(){
-        document.write("gluck!");
-    }
-};
+//     tomar(){
+//         document.write("gluck!");
+//     }
+// };
 
-let tazaModerna = new TazaModerna("small","black","si tiene capacidad de retencion","es termica");
+// let tazaModerna = new TazaModerna("small","black","si tiene capacidad de retencion","es termica");
 
-// tazaModerna.verinfo()
+// // tazaModerna.verinfo()
 
-    //setters
-tazaModerna.setTermica = "no es termica";
-document.write(tazaModerna.getTermica);
+//     //setters
+// tazaModerna.setTermica = "no es termica";
+// document.write(tazaModerna.getTermica);
 
     // getters
 
+    // metodos en cadena
 
+let cadena  = ("cadena nasshi nasshi ");
+// let cadena2 = ("cadena 2");
+
+resultado = cadena.substring(1,8);
+
+document.write(resultado);
                          //-- pruebas ----------------------------
 
 
