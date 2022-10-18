@@ -1,0 +1,122 @@
+
+:root {
+    --negro: #393939;
+    --principal:;
+    --secundaria:;
+    --blanco: #ececec;
+	/* Tipografía */
+    --tipo-principal:;
+    --tipo-secundaria:;
+ }
+	/* Las adaptamos al modo oscuro */
+@media (prefers-color-scheme: dark) {
+    :root {
+      --negro: #ececec;
+    }
+ }
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+	/* Configuramos el texto que seleccionamos */
+::-moz-selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+body{
+    background-color: var(--principal);
+    /* font-size: 2.5rem; */
+    line-height: 1.4em;
+}
+
+.header{
+    background-color: aqua;
+    width: 100%;
+    max-width: 70rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__h1{
+    padding:4rem;
+    background-color: blueviolet;
+}
+.main {
+    background-color: red;
+    padding: 1rem;
+}
+.main__a--1 {}
+.main__a--2 {}
+.main__a--3 {}
+.main__a--4 {}
+.main__a--5 {}
+
+.section {
+  background-color: black;
+  width: 100%;
+  max-width: 70rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns:repeat(
+    auto-fit,
+    minmax(17em,1fr)
+  );
+  gap: 1em;
+                       
+}
+.section__article--1 {
+  background-color: orange;
+}
+.section__article--2 {
+  background-color: tomato;
+}
+.section__article--3 {
+  background-color:orangered;
+}
+.section__article--4 {
+  background-color: blueviolet;
+}
+
+.section__h2 {
+  text-align: center;
+  padding: 0.5em;
+}
+.section__img {
+  background-color: darkgreen;
+  display: block;
+  width:100%;
+  min-height: 20em;
+
+}
+.section__p {
+  padding:1em;
+}
+
+.footer {
+  background-color: #bcb4b4;
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  justify-content: space-around;
+}
+.footer__p {
+  color: black;
+}
+.footer__a--1 {
+  color: brown;
+}
+.footer__a--2 {
+  color: green;
+}

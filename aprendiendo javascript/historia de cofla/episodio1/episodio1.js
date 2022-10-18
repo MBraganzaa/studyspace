@@ -62,24 +62,46 @@ else {
 // dinero pedro
 
 
-if (dineropedro >= 0.6 && dineropedro < 1) {
+// if (dineropedro >= 0.6 && dineropedro < 1) {
+//     alert("pedro, comprate el helado de agua");
+// }
+// else if (dineropedro >= 1 && dineropedro < 1.6) {
+//     alert("pedro, comprate el helado de crema")
+// }
+// else if (dineropedro >= 1.6 && dineropedro < 1.7) {
+//     alert("pedro, comprate el helado de heladix")
+// }
+// else if (dineropedro >= 1.7 && dineropedro < 1.8) {
+//     alert("pedro, comprate el helado de heladovich")
+// }
+// else if (dineropedro >= 1.8 && dineropedro < 2.9) {
+//     alert("pedro, comprate el helado de helardo")
+// }
+// else if (dineropedro >= 2.9 ) {
+//     alert("pedro, comprate esta o 1/4kg de helado")
+// }
+// else {
+//     alert("pedro, comprate esta")
+// }
+
+if (dineropedro >= 0.6 && dineropedro < 1){
     alert("pedro, comprate el helado de agua");
 }
-else if (dineropedro >= 1 && dineropedro < 1.6) {
-    alert("pedro, comprate el helado de crema")
+else if (dineropedro >= 1 && dineropedro < 1.6){
+    alert("pedro, comprate el helado de crema");
 }
-else if (dineropedro >= 1.6 && dineropedro < 1.7) {
-    alert("pedro, comprate el helado de heladix")
+else if (dineropedro >= 1.6 && dineropedro < 1.7){
+    alert("pedro, comprate el helado de heladix");
 }
-else if (dineropedro >= 1.7 && dineropedro < 1.8) {
-    alert("pedro, comprate el helado de heladovich")
+else if (dineropedro >= 1.7 && dineropedro < 1.8){
+    alert("pedro, comprate el helado de heladovich");
 }
-else if (dineropedro >= 1.8 && dineropedro < 2.9) {
-    alert("pedro, comprate el helado de helardo")
+else if (dineropedro >= 1.8 && dineropedro < 2.9){
+    alert("pedro, comprate el helado de helardo");
 }
-else if (dineropedro >= 2.9 ) {
-    alert("pedro, comprate esta o 1/4kg de helado")
+else if (dineropedro >= 2.9 ){
+    alert("pedro, comprate un cuarto de helado");
 }
 else {
-    alert("pedro, comprate esta")
+    alert("pedro, no te alcanza");
 }

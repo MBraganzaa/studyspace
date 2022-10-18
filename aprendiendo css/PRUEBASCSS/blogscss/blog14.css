@@ -67,24 +67,23 @@ body{
     max-width: 70em;
     margin: auto;
     display: grid;
-    grid-template-areas: "a b""c d";
+    grid-template-columns:repeat(
+        auto-fit,
+        minmax(16em,1fr)
+    );
     gap: 1em;
 }
 .section__article--a {
     background-color: tomato ;
-    grid-area: a ;
 }
 .section__article--b {
     background-color: violet;
-    grid-area: b ;
 }
 .section__article--c {
     background-color: yellow;
-    grid-area: c ;
 }
 .section__article--d {
     background-color: gray;
-    grid-area: d ;
 }
 
 .section__h2 {

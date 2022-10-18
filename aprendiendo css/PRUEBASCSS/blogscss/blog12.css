@@ -69,26 +69,23 @@ body{
     margin: auto;
     background-color: violet;
     display: grid;
-    grid-template-areas: "a c"
-                         "b d";
+    grid-template-columns:repeat(
+        auto-fit,
+        minmax(200px,1fr)
+    );
     gap: 1em;
-
 }
 .section__article--a {
     background-color: tomato;
-    grid-area:a;
 }
 .section__article--b {
     background-color: blueviolet;
-    grid-area:b;
 }
 .section__article--c {
     background-color: greenyellow;
-    grid-area:c;
 }
 .section__article--d {
     background-color: purple;
-    grid-area:d;
 }
 
 .section__h2 {
