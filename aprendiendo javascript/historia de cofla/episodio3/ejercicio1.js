@@ -142,5 +142,21 @@ class altaGama extends celular {
         modelo : ${this.modelo}. <br>`
     }
 }
-let celular1 = new altaGama ("5 de alto y 3 de ancho","6 pulgadas","8 ram","128 gb","pro","medium","gold","iphone 14 pro");
-document.write(`${celular1.mostrarDataAltaGama()}`)
+// let celular1 = new altaGama ("5 de alto y 3 de ancho","6 pulgadas","8 ram","128 gb","pro","medium","gold","iphone 14 pro");
+// document.write(`${celular1.mostrarDataAltaGama()}`)
+
+class altagama2 extends altaGama {
+    constructor(pulgadas,tamaño,memoriaram,memoriaexterna,camara,camaradelantera,color,modelo,bateria,precio){
+        super(pulgadas,tamaño,memoriaram,memoriaexterna,camara,camaradelantera,color,modelo);
+        this.bateria = bateria;
+        this.precio = precio;
+    }
+    mostrarDataAltaGama2(){
+        return `${this.mostrarDataAltaGama()}
+        bateria : ${this.bateria}. <br>
+        precio : ${this.precio}. <br>`;
+    }
+}
+
+let celular2 = new altagama2 ("6 pulgadas","5 de alto x 3 de ancho","8 ram","128 gb","pro","media pro","gold","sansung A70","13000 amperios","120.000$");
+document.write(`${celular2.mostrarDataAltaGama2()}`);
