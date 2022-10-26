@@ -170,21 +170,28 @@
 
     // metodos en cadena
 
-// let cadena  = ("cadena nasshi nasshi ");
-// // let cadena2 = ("cadena 2");
+let cadena  = ("cadena nasshi nasshi ");
+// let cadena2 = ("cadena 2");
 
-// resultado = cadena.substring(1,8);
+resultado = cadena.substring();
 
-// document.write(resultado);
+document.write(resultado);
 
     // metodos en arrays
-let comida = ["tomate","papa","cebolla"];
+// let comida = ["tomate","papa","cebolla"];
 
-// document.write(comida,"<br>")
+//  document.write(comida,"<br>")
 
-resultado = comida.join("<br>elemento: ");
+// resultado = comida.join("<br>elemento: ");
 
-document.write("elemento: "+resultado);
+// document.write("elemento: "+resultado);
+
+
+// let comida = ["comida","porro","carne"];
+ 
+// resultado = comida.sort();
+
+// document.write(resultado);
 
                          //-- pruebas ----------------------------
 

@@ -93,32 +93,62 @@
 //     document.write(resultado);
 // }
 
-let cantidad = prompt("¿cuantos almunos son?");
-let alumnostotales = []
+// let cantidad = prompt("¿cuantos almunos son?");
+// let alumnostotales = []
 
-for (i = 0; i < cantidad; i ++){
-    alumnostotales[i] = [prompt("nombre del alumno " + (i+1)), 0];
+// for (i = 0; i < cantidad; i ++){
+//     alumnostotales[i] = [prompt("nombre del alumno " + (i+1)), 0];
+// }
+
+// const tomarAsistencia = (nombre,p)=>{
+//     let presencia = prompt(nombre);
+//     if (presencia == "p" || presencia == "P"){
+//         alumnostotales [p][1]++;
+//     }
+// }
+
+// for (i = 0; i < 30; i ++){
+//     for (alumnos in alumnostotales){
+//         tomarAsistencia(alumnostotales[alumnos][0],alumnos)
+//     }
+// }
+
+// for (alumnos in alumnostotales){
+//     let resultado = `${alumnostotales[alumnos][0]}:<br>
+//     ___presentes: ${alumnostotales[alumnos][1]}<br>
+//     ___ausentes: ${30 - alumnostotales[alumnos][1]}<br>`
+//     if (30 - alumnostotales[alumnos][1] > 18){
+//         resultado += `___resulatado: Desaprobado por inasistencias <br><br>`;
+//     } else {resultado += `___resultado: Aprobado <br><br>`};
+//     document.write(resultado);
+// }
+
+
+let cantidad1 = prompt("cuantos alumnos son?");
+let alumnostotales1 = [];
+
+for (i = 0; i < cantidad1; i ++){
+    alumnostotales1[i] = [prompt("nombre del alumno " + (i+1)), 0]
 }
 
-const tomarAsistencia = (nombre,p)=>{
-    let presencia = prompt(nombre);
-    if (presencia == "p" || presencia == "P"){
-        alumnostotales [p][1]++;
-    }
+const tomarasistencia1 = (nombre,p)=>{
+    let presencia1 = prompt(nombre);
+    if (presencia1 == "p" || presencia1 == "P"){
+        alumnostotales1 [p][1]++;
+    } 
 }
 
 for (i = 0; i < 30; i ++){
-    for (alumnos in alumnostotales){
-        tomarAsistencia(alumnostotales[alumnos][0],alumnos)
+    for (alumnos in alumnostotales1){
+        tomarasistencia1(alumnostotales1[alumnos][0],alumnos);
     }
 }
 
-for (alumnos in alumnostotales){
-    let resultado = `${alumnostotales[alumnos][0]}:<br>
-    ___presentes: ${alumnostotales[alumnos][1]}<br>
-    ___ausentes: ${30 - alumnostotales[alumnos][1]}<br>`
-    if (30 - alumnostotales[alumnos][1] > 18){
-        resultado += `___resulatado: Desaprobado por inasistencias <br><br>`;
-    } else {resultado += `___resultado: Aprobado <br><br>`};
-    document.write(resultado);
+for (alumnos in alumnostotales1){
+    let resultado = `${alumnostotales1[alumnos][0]} :<br>
+    ___asistencias : ${alumnostotales1[alumnos][1]} <br>
+    ___ausentes : ${30 - alumnostotales1[alumnos][1]} <br><br>`
+    if (30 - alumnostotales1[alumnos][1] > 18 ){
+    resultado += `repobrado por inasistencias <br><br>`
+    } document.write(resultado);
 }
