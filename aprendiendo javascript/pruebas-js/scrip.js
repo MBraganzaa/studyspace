@@ -140,7 +140,7 @@
 //         document.write(this.info)       
 //     }
 // }
-//     // herencia 
+    // herencia 
 // class TazaModerna extends taza {
 //     constructor(tamaño,color,capacidadDeRetencion,termica){
 //         super(tamaño,color,capacidadDeRetencion);
@@ -160,24 +160,38 @@
 
 // let tazaModerna = new TazaModerna("small","black","si tiene capacidad de retencion","es termica");
 
-// // tazaModerna.verinfo()
+// tazaModerna.verinfo()
 
-//     //setters
+    //setters
+
 // tazaModerna.setTermica = "no es termica";
 // document.write(tazaModerna.getTermica);
 
     // getters
 
+
     // metodos en cadena
 
-let cadena  = ("cadena nasshi nasshi ");
-// let cadena2 = ("cadena 2");
+// let cadena  = "cadena nasshi nasshi ";
+// let cadena2 = "ahora si";
+// let cadena3 = "   ES EL TIRRI EE   ";
+// let cadena4 = "21"
 
-resultado = cadena.substring();
+// resultado = cadena2.padEnd(20," aeiou");
+// resultado = cadena2.substring(0,5);
 
-document.write(resultado);
+// resultado = cadena4.toString();
+// document.write(2 + resultado);
+
+// resultado1 = cadena3;
+// document.write(resultado1.length + "<br><br>");
+
+// resultado = cadena3.trimStart();
+// document.write(resultado.length);
+
 
     // metodos en arrays
+
 // let comida = ["tomate","papa","cebolla"];
 
 //  document.write(comida,"<br>")
@@ -187,13 +201,48 @@ document.write(resultado);
 // document.write("elemento: "+resultado);
 
 
-// let comida = ["comida","porro","carne"];
+// let comida1 = ["comida","porro","carne"];
  
-// resultado = comida.sort();
+// comida1.unshift("horno","perejil");
 
-// document.write(resultado);
+// document.write(resultado + "<br>");
+// document.write(comida1 + "<br>");
 
-                         //-- pruebas ----------------------------
+// let resultado = comida1.splice(3,0,"tomate");
+// document.write(comida1 + "<br>");
+
+// let resultado1 = comida1.join(" - ");
+// document.write(resultado1 + "<br>");
+
+// let resultado2 = comida1.slice(0,3);
+// document.write(resultado2);
+
+// let comida = ["papa","tomate","salame","queso"];
+// let resultado = comida.filter(numero =>  numero.length > 4)
+// document.write(resultado + "<br>")
+
+            // metodos math
+
+// let numero = Math.random() * 100;
+// numero = numero.toString();
+// num = numero[0] + numero[1];
+// if (numero[1] == ".") {
+//     num = numero[0]; 
+// }   
+// document.write(num);
+
+// let numero = Math.random() * 99;
+// numero = Math.round(numero);
+
+// document.write(numero);     
+// "esto es lo mismo que lo de arriba"
+
+let numero = Math.random() * 99;
+numero = Math.trunc(numero);
+
+document.write(numero)
+
+                        //  -- pruebas ----------------------------
 
 
 
