@@ -81,43 +81,43 @@
 // ${celular3.infoAltaGama()}</br>
 // `);
 
-class celular {
-    constructor(pulgadas,tamaño,memoriaram,memoriaexterna,camara){
-        this.pulgadas = pulgadas;
-        this.tamaño = tamaño;
-        this.memoriaram = memoriaram;
-        this.memoriaexterna = memoriaexterna;
-        this.camara = camara;
-        this.encerder = false;
-    }
-    botonEncender(){
-        if (this.encerder == false){
-            alert("encendiendo el celular");
-            this.encerder = true; 
-        } 
-    } 
-    botonApagar(){
-        if (this.encerder == true){
-            alert("apagando el celular");
-            this.encerder = false; 
-        }
-    }
-    mostrarData(){
-        return `
-        tamaño : ${this.tamaño}. <br>
-        pulgadas : ${this.pulgadas}. <br>
-        memoria ram : ${this.memoriaram}. <br>
-        memoria externa : ${this.memoriaexterna}. <br>
-        camara : ${this.camara}. <br>`
-    }
-    sacarFoto(){
-        if (this.encerder == true){
-            alert("sacando una foto de calidad.");
-        } else {
-            alert("el celular estaria apagado");
-        }
-    }
-}
+// class celular {
+//     constructor(pulgadas,tamaño,memoriaram,memoriaexterna,camara){
+//         this.pulgadas = pulgadas;
+//         this.tamaño = tamaño;
+//         this.memoriaram = memoriaram;
+//         this.memoriaexterna = memoriaexterna;
+//         this.camara = camara;
+//         this.encerder = false;
+//     }
+//     botonEncender(){
+//         if (this.encerder == false){
+//             alert("encendiendo el celular");
+//             this.encerder = true; 
+//         } 
+//     } 
+//     botonApagar(){
+//         if (this.encerder == true){
+//             alert("apagando el celular");
+//             this.encerder = false; 
+//         }
+//     }
+//     mostrarData(){
+//         return `
+//         tamaño : ${this.tamaño}. <br>
+//         pulgadas : ${this.pulgadas}. <br>
+//         memoria ram : ${this.memoriaram}. <br>
+//         memoria externa : ${this.memoriaexterna}. <br>
+//         camara : ${this.camara}. <br>`
+//     }
+//     sacarFoto(){
+//         if (this.encerder == true){
+//             alert("sacando una foto de calidad.");
+//         } else {
+//             alert("el celular estaria apagado");
+//         }
+//     }
+// }
 
 // let celular1 = new celular ("5 de alto y 3 de ancho","6 pulgadas","8 ram","128 gb","pro");
 
@@ -128,35 +128,62 @@ class celular {
 //     ${celular1.mostrarData()}
 // `)
 
-class altaGama extends celular {
-    constructor(pulgadas,tamaño,memoriaram,memoriaexterna,camara,camaradelantera,color,modelo){
-        super(pulgadas,tamaño,memoriaram,memoriaexterna,camara);
-        this.camaradelantera = camaradelantera;
-        this.color = color;
-        this.modelo = modelo;
-    }
-    mostrarDataAltaGama(){
-        return `${this.mostrarData()}
-        camara delantera : ${this.camaradelantera}. <br> 
-        color : ${this.color}. <br>
-        modelo : ${this.modelo}. <br>`
-    }
-}
+// class altaGama extends celular {
+//     constructor(pulgadas,tamaño,memoriaram,memoriaexterna,camara,camaradelantera,color,modelo){
+//         super(pulgadas,tamaño,memoriaram,memoriaexterna,camara);
+//         this.camaradelantera = camaradelantera;
+//         this.color = color;
+//         this.modelo = modelo;
+//     }
+//     mostrarDataAltaGama(){
+//         return `${this.mostrarData()}
+//         camara delantera : ${this.camaradelantera}. <br> 
+//         color : ${this.color}. <br>
+//         modelo : ${this.modelo}. <br>`
+//     }
+// }
 // let celular1 = new altaGama ("5 de alto y 3 de ancho","6 pulgadas","8 ram","128 gb","pro","medium","gold","iphone 14 pro");
 // document.write(`${celular1.mostrarDataAltaGama()}`)
 
-class altagama2 extends altaGama {
-    constructor(pulgadas,tamaño,memoriaram,memoriaexterna,camara,camaradelantera,color,modelo,bateria,precio){
-        super(pulgadas,tamaño,memoriaram,memoriaexterna,camara,camaradelantera,color,modelo);
-        this.bateria = bateria;
+// 
+
+class autos {
+    constructor(modelo,gama,año,precio){
+        this.modelo = modelo;
+        this.gama = gama;
+        this.año = año;
         this.precio = precio;
+        this.free = false;
+        this.freee = false;
     }
-    mostrarDataAltaGama2(){
-        return `${this.mostrarDataAltaGama()}
-        bateria : ${this.bateria}. <br>
-        precio : ${this.precio}. <br>`;
+    
+    arrancar(){
+        if (this.freee == false){
+            alert("encendiendo el automovil");
+            this.freee = true;
+        } else {
+            alert("el auto esta encendido");
+        }
+    }
+
+    trabarelauto(){
+        if (this.free == false && this.freee == false){
+            alert("se trabo el auto");
+            this.free = true;
+        } else {
+            alert("el auto esta encendido")
+        }
+    }
+
+    info(){
+        return `modelo : ${this.modelo}.<br>
+        gama : ${this.gama}.<br>
+        año : ${this.año}.<br>
+        precio : ${this.precio}.<br>`
     }
 }
 
-let celular2 = new altagama2 ("6 pulgadas","5 de alto x 3 de ancho","8 ram","128 gb","pro","media pro","gold","sansung A70","13000 amperios","120.000$");
-document.write(`${celular2.mostrarDataAltaGama2()}`);
+let auto1 = new autos ("audi","a3","2020","3000$");
+auto1.arrancar();
+auto1.trabarelauto();
+document.write(`${auto1.info()}`);

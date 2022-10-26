@@ -21,7 +21,7 @@
 // validarcliente(8);
 
 
-let free = false;
+
 
 // const validarcliente = (time)=>{
 //     let edad = prompt("cual es tu edad");
@@ -105,31 +105,58 @@ let free = false;
 
 // let free = false;
 
-const validarcliente = (time)=>{
-    let edad = prompt("¿que edad tienes?");
+// const validarcliente = (time)=>{
+//     let edad = prompt("¿que edad tienes?");
+//     if (edad >= 18){
+//         if (time >= 1.3 && time < 7){
+//             if (time == 2 && free == false){
+//                 alert("sos la primera persona en pasar despues de las 2... pasas gratis");
+//                 free = true;
+//         } else {
+//             alert(`son las ${time} y la entrada cuesta 200`);
+//         }
+//     }
+//     if (time < 1.3){
+//             alert(`son las ${time} tenes que esperar hasta las 1:30`);
+//         }
+//     if (time > 7){
+//             alert(`son las ${time} el boliche ya cerro, volve mañana.`);
+//         } 
+//     }
+//     else {
+//         alert("volve cuando tengas 18 pendejo");
+//     }
+// }
+
+// validarcliente(1);
+// validarcliente(8);
+// validarcliente(2);
+// validarcliente(3);
+// validarcliente(2);
+
+let free = false;
+
+const validarcliente = (hora)=>{
+    let edad = prompt("le revisa el dni");
     if (edad >= 18){
-        if (time >= 1.3 && time < 7){
-            if (time == 2 && free == false){
-                alert("sos la primera persona en pasar despues de las 2... pasas gratis");
-                free = true;
-        } else {
-            alert(`son las ${time} y la entrada cuesta 200`);
+        if(hora == 2 && free == false){
+            alert("¡Felicidades! sos la primera persona que pasa despues de las 2am, pasas gratis");
+            free = true;
         }
-    }
-    if (time < 1.3){
-            alert(`son las ${time} tenes que esperar hasta las 1:30`);
+        else if (hora >= 1.30 && hora < 7){
+            alert("podes pasar la entrada esta 300$");
         }
-    if (time > 7){
-            alert(`son las ${time} el boliche ya cerro, volve mañana.`);
-        } 
+        else {
+            alert("espera a que abra")
+        }
     }
     else {
-        alert("volve cuando tengas 18 pendejo");
+        alert("sos menor de edad, no podes pasar.");
     }
 }
 
 validarcliente(1);
-validarcliente(8);
 validarcliente(2);
 validarcliente(3);
 validarcliente(2);
+

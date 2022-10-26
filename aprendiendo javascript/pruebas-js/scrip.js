@@ -180,7 +180,7 @@
     // metodos en arrays
 let comida = ["tomate","papa","cebolla"];
 
-document.write(comida,"<br>")
+// document.write(comida,"<br>")
 
 resultado = comida.join("<br>elemento: ");
 

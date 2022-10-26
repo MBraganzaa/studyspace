@@ -178,49 +178,91 @@
 //     alert("error");
 // }
 
+// const sumar = (num1,num2)=>{
+//     return parseInt(num1) + parseInt(num2);
+// }
+// const restar = (num1,num2)=>{
+//     return parseInt(num1) - parseInt(num2); 
+// }
+// const multiplicar = (num1,num2)=>{
+//     return parseInt(num1) * parseInt(num2); 
+// }
+// const dividir = (num1,num2)=>{
+//     return parseInt(num1) / parseInt(num2); 
+// }
+
+// alert("presione el numero de la funcion");
+// let funcion = prompt("1 : sumar, 2 : restar, 3 : multiplicar, 4 dividir." );
+
+// if (funcion == 1){
+//     let num1 = prompt("ponga el primer numero");
+//     let num2 = prompt("ponga el segundo numero");
+//     resultado = sumar(num1,num2);
+//     alert(resultado)
+// }
+// else if (funcion == 2){
+//     let num1 = prompt("ponga el primer numero");
+//     let num2 = prompt("ponga el segundo numero");
+//     resultado = restar(num1,num2);
+//     alert(resultado)
+// }
+// else if (funcion == 3){
+//     let num1 = prompt("ponga el primer numero");
+//     let num2 = prompt("ponga el segundo numero");
+//     resultado = multiplicar(num1,num2);
+//     alert(resultado)
+// }
+// else if (funcion == 4){
+//     let num1 = prompt("ponga el primer numero");
+//     let num2 = prompt("ponga el segundo numero");
+//     resultado = dividir(num1,num2);
+//     alert(resultado);
+// }
+// else {
+//     alert("error");
+// }
+
 const sumar = (num1,num2)=>{
     return parseInt(num1) + parseInt(num2);
 }
 const restar = (num1,num2)=>{
-    return parseInt(num1) - parseInt(num2); 
+    return parseInt(num1) - parseInt(num2);
 }
 const multiplicar = (num1,num2)=>{
-    return parseInt(num1) * parseInt(num2); 
+    return parseInt(num1) * parseInt(num2);
 }
 const dividir = (num1,num2)=>{
-    return parseInt(num1) / parseInt(num2); 
+    return parseInt(num1) / parseInt(num2);
 }
 
-alert("presione el numero de la funcion");
-let funcion = prompt("1 : sumar, 2 : restar, 3 : multiplicar, 4 dividir." );
+alert("elija la operacion a realizar");
+const operacion = prompt("1 : sumar, 2 : restar, 3 : multiplicar, 4 : dividir");
 
-if (funcion == 1){
-    let num1 = prompt("ponga el primer numero");
-    let num2 = prompt("ponga el segundo numero");
+if (operacion == 1){
+    let num1 = prompt("escriba el primer numero");
+    let num2 = prompt("escriba el segundo numero");
     resultado = sumar(num1,num2);
-    alert(resultado)
+    alert(resultado);
 }
-else if (funcion == 2){
-    let num1 = prompt("ponga el primer numero");
-    let num2 = prompt("ponga el segundo numero");
+else if (operacion == 2){
+    let num1 = prompt("escriba el primer numero");
+    let num2 = prompt("escriba el segundo numero");
     resultado = restar(num1,num2);
-    alert(resultado)
+    alert(resultado);
 }
-else if (funcion == 3){
-    let num1 = prompt("ponga el primer numero");
-    let num2 = prompt("ponga el segundo numero");
+else if (operacion == 3){
+    let num1 = prompt("escriba el primer numero");
+    let num2 = prompt("escriba el segundo numero");
     resultado = multiplicar(num1,num2);
-    alert(resultado)
+    alert(resultado);
 }
-else if (funcion == 4){
-    let num1 = prompt("ponga el primer numero");
-    let num2 = prompt("ponga el segundo numero");
+else if (operacion == 4){
+    let num1 = prompt("escriba el primer numero");
+    let num2 = prompt("escriba el segundo numero");
     resultado = dividir(num1,num2);
     alert(resultado);
 }
 else {
     alert("error");
 }
-
-
 
