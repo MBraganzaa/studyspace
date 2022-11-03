@@ -147,43 +147,120 @@
 
 // 
 
-class autos {
-    constructor(modelo,gama,año,precio){
-        this.modelo = modelo;
-        this.gama = gama;
-        this.año = año;
-        this.precio = precio;
-        this.free = false;
-        this.freee = false;
-    }
+// class autos {
+//     constructor(modelo,gama,año,precio){
+//         this.modelo = modelo;
+//         this.gama = gama;
+//         this.año = año;
+//         this.precio = precio;
+//         this.free = false;
+//         this.freee = false;
+//     }
     
-    arrancar(){
-        if (this.freee == false){
-            alert("encendiendo el automovil");
-            this.freee = true;
+//     arrancar(){
+//         if (this.freee == false){
+//             alert("encendiendo el automovil");
+//             this.freee = true;
+//         } else {
+//             alert("el auto esta encendido");
+//         }
+//     }
+
+//     trabarelauto(){
+//         if (this.free == false && this.freee == false){
+//             alert("se trabo el auto");
+//             this.free = true;
+//         } else {
+//             alert("el auto esta encendido")
+//         }
+//     }
+
+//     info(){
+//         return `modelo : ${this.modelo}.<br>
+//         gama : ${this.gama}.<br>
+//         año : ${this.año}.<br>
+//         precio : ${this.precio}.<br>`
+//     }
+// }
+
+// let auto1 = new autos ("audi","a3","2020","3000$");
+// auto1.arrancar();
+// auto1.trabarelauto();
+// document.write(`${auto1.info()}`);
+
+// class autos1 extends autos {
+//     constructor(modelo,gama,año,precio,velXseg,color,interior){
+//         super(modelo,gama,año,precio);
+//         this.velXseg = velXseg;
+//         this.color = color;
+//         this.interior = interior;   
+//     }
+//     info1(){
+//         return`${this.info()}
+//         velocidad por segundo : ${this.velXseg}.<br>
+//         color : ${this.color}.<br>
+//         interior : ${this.interior}.<br>`
+//     };
+// } 
+
+// let autonew = new autos1 ("audi","a3","2020","3000$","0 a 60km en 0.5seg","black","cuero negro");
+// document.write(`${autonew.info1()}`);
+
+class perfumes {
+    constructor(){
+        this.agitar = false;
+    }
+    agitarr(){
+        alert("aguitando el perfume");
+        this.agitar = true;
+    }
+    echarEnUnCarton(){
+        alert("se perfumo el carton");
+    }
+    echarEnLaMuñeca(){
+        alert("se perfumo en la muñeca");
+    }
+    aromaEnElCarton(){
+        if (this.agitar == true){
+            alert("mas fuerte y rico");
         } else {
-            alert("el auto esta encendido");
+            alert("un aroma muy dulce");
         }
     }
-
-    trabarelauto(){
-        if (this.free == false && this.freee == false){
-            alert("se trabo el auto");
-            this.free = true;
+    aromaEnLaMuñeca(){
+        if (this.agitar == true){
+            alert("un aroma a madera y mas dulce");
         } else {
-            alert("el auto esta encendido")
+            alert("un aroma a corcho");
         }
-    }
-
-    info(){
-        return `modelo : ${this.modelo}.<br>
-        gama : ${this.gama}.<br>
-        año : ${this.año}.<br>
-        precio : ${this.precio}.<br>`
     }
 }
+let avon = new perfumes();
 
-let auto1 = new autos ("audi","a3","2020","3000$");
-auto1.arrancar();
-auto1.trabarelauto();
-document.write(`${auto1.info()}`);
+alert("elija la opcion que quiere hacer");
+let opcion1 = prompt("1 : agitar y echar, 2 : echar directamente");
+
+if (opcion1 == 1){
+    avon.agitarr();
+    let textura = prompt("1 : echar en el carton, 2 : echar en la muñeca");
+    if(textura == 1){
+        avon.echarEnUnCarton();
+        avon.aromaEnElCarton();
+    }
+    else if (textura == 2){
+        avon.echarEnLaMuñeca();
+        avon.aromaEnLaMuñeca();
+    } else {alert("echo al aire")};
+}
+else if (opcion1 == 2){
+    let textura = prompt("1 : echar en el carton, 2 : echar en la muñeca");
+    if(textura == 1){
+        avon.echarEnUnCarton();
+        avon.aromaEnElCarton();
+    }
+    else if (textura == 2){
+        avon.echarEnLaMuñeca();
+        avon.aromaEnLaMuñeca();
+    } else {alert("echo al aire")};
+} 
+else {alert("error")}

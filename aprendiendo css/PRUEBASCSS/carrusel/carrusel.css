@@ -80,6 +80,6 @@ body{
     background-color: chartreuse;
 }
 
-.carrusel .punto.activo{
+.carrusel .punto, .activo{
     background-color: orange ;
 }

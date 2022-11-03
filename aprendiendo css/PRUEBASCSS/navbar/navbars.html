@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbars.css">
+    <title>Navbars</title>
+</head>
+<body>
+    <nav class="navbar">
+        <button onclick="togglemenu()" class="burger"></button>
+        <button class="button">home</button>
+        <div class="dropdowns">
+            <div class="dropdown">
+                <button class="button">
+                    services
+                    <img src="">
+                </button>
+                <div class="dropdonw__menu">
+                    <button>UI/UX Consultancy</button>
+                    <button>Website Development</button>
+                    <button>SEO Advice</button>
+                </div>
+            </div>
+            <!-- other dropdonws -->
+        </div>
+        <nav>
+            <script>
+                const togglemenu = () => {
+                document.body.classlist.toggle("open");}
+            </script>
+        </nav>
+    </nav>
+</body>
+</html>
