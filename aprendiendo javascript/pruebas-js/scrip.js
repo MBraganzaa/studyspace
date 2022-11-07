@@ -237,10 +237,20 @@
 // document.write(numero);     
 // "esto es lo mismo que lo de arriba"
 
-let numero = Math.random() * 99;
-numero = Math.trunc(numero);
+// let numero = Math.random() * 99;
+// numero = Math.trunc(numero);
 
-document.write(numero)
+// document.write(numero)
+
+            //selection de elementos
+
+let titulo = document.querySelector(".titulo");
+
+titulo.style.color = "red"
+titulo.style.backgroundColor = "#333"
+titulo.style.padding = "2rem";
+titulo.style.fontSize = "9rem";
+
 
                         //  -- pruebas ----------------------------
 
