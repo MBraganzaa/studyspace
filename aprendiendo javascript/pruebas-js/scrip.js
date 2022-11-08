@@ -242,14 +242,22 @@
 
 // document.write(numero)
 
-            //selection de elementos
+            //selection de elementos DOM
 
 let titulo = document.querySelector(".titulo");
 
 titulo.style.color = "red"
 titulo.style.backgroundColor = "#333"
 titulo.style.padding = "2rem";
-titulo.style.fontSize = "9rem";
+titulo.style.fontSize = "3rem";
+
+let form = document.querySelector(".form");
+let input = document.querySelector(".input");
+
+
+input.setAttribute("type","text");
+document.write(input.getAttribute("type"));
+
 
 
                         //  -- pruebas ----------------------------
