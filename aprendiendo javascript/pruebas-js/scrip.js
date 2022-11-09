@@ -245,18 +245,22 @@
             //selection de elementos DOM
 
 let titulo = document.querySelector(".titulo");
+// titulo.setAttribute("title","tits");
 
-titulo.style.color = "red"
-titulo.style.backgroundColor = "#333"
-titulo.style.padding = "2rem";
-titulo.style.fontSize = "3rem";
+// titulo.style.color = "red"
+// titulo.style.backgroundColor = "#333"
+// titulo.style.padding = "2rem";
+// titulo.style.fontSize = "3rem";
 
-let form = document.querySelector(".form");
+// let form = document.querySelector(".form");
 let input = document.querySelector(".input");
+document.write(input.minLength="4");
 
 
-input.setAttribute("type","text");
-document.write(input.getAttribute("type"));
+
+// input.setAttribute("type","text");
+// document.write(input.getAttribute("type"));
+
 
 
 
