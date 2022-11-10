@@ -244,7 +244,27 @@
 
             //selection de elementos DOM
 
-let titulo = document.querySelector(".titulo");
+let div1 = document.querySelector(".div1");
+let primerhijo = div1.lastElementChild;
+console.log(primerhijo);
+
+// let div = document.querySelector(".div");
+// // let textDelItem = document.createTextNode("hola mundo");
+// // item.appendChild(textDelItem); esto es lo mismo que lo de inner.HTML
+// let fragment = document.createDocumentFragment();
+// for (i=0; i < 10; i++){
+//     let item = document.createElement("LI");
+//     item.innerHTML = "este es un texto de la lista"; 
+//     fragment.appendChild(item);
+// }
+// div.appendChild(fragment);
+// console.log(item); 
+
+// let titulo = document.querySelector(".titulo");
+// let resultado = titulo.innerHTML
+// document.write(resultado)
+// alert(resultado)
+
 // titulo.setAttribute("title","tits");
 
 // titulo.style.color = "red"
@@ -253,8 +273,8 @@ let titulo = document.querySelector(".titulo");
 // titulo.style.fontSize = "3rem";
 
 // let form = document.querySelector(".form");
-let input = document.querySelector(".input");
-document.write(input.minLength="4");
+// let input = document.querySelector(".input");
+// document.write(input.minLength="4");
 
 
 
