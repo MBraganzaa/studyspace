@@ -245,8 +245,21 @@
             //selection de elementos DOM
 
 let div1 = document.querySelector(".div1");
-let primerhijo = div1.lastElementChild;
-console.log(primerhijo);
+
+let parrafo = document.createElement("P"); 
+let h2Nuevo = document.createElement("H2");
+
+parrafo.innerHTML = "parrafo"; 
+h2Nuevo.innerHTML = "titulo";
+
+let h2Viejo = document.querySelector(".h2");
+
+div1.replaceChild(h2Nuevo,h2Viejo);
+
+
+
+// let primerhijo = div1.firstElementChild;
+// console.log(primerhijo);
 
 // let div = document.querySelector(".div");
 // // let textDelItem = document.createTextNode("hola mundo");
