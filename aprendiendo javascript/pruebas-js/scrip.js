@@ -244,17 +244,20 @@
 
             //selection de elementos DOM
 
-let div1 = document.querySelector(".div1");
+// let div1 = document.querySelector(".div1");
 
-let parrafo = document.createElement("P"); 
-let h2Nuevo = document.createElement("H2");
+// let parrafo = document.createElement("P"); 
+// let h2Nuevo = document.createElement("H2");
 
-parrafo.innerHTML = "parrafo"; 
-h2Nuevo.innerHTML = "titulo";
+// parrafo.innerHTML = "parrafo"; 
+// h2Nuevo.innerHTML = "titulo";
 
-let h2Viejo = document.querySelector(".h2");
+// let h2Viejo = document.querySelector(".h2");
 
-div1.replaceChild(h2Nuevo,h2Viejo);
+// div1.replaceChild(h2Nuevo,h2Viejo);
+
+            // window
+// window.confirm("esta seguro que quiere cerrar esta pantalla");
 
 
 
