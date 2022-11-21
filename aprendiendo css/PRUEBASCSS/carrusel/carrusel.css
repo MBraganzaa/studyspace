@@ -1,11 +1,11 @@
 :root {
     --negro: #393939;
-    --principal:;
-    --secundaria:;
+    /* --principal:; */
+    /* --secundaria:; */
     --blanco: #ececec;
 	/* Tipografía */
-    --tipo-principal:;
-    --tipo-secundaria:;
+    /* --tipo-principal:; */
+    /* --tipo-secundaria:; */
  }
 	/* Las adaptamos al modo oscuro */
 @media (prefers-color-scheme: dark) {

@@ -258,7 +258,7 @@
 
             // window
 // window.confirm("esta seguro que quiere cerrar esta pantalla");
-
+// document.querySelector("body > div > h2").style.color = "red"
 
 
 // let primerhijo = div1.firstElementChild;
@@ -298,8 +298,31 @@
 // document.write(input.getAttribute("type"));
 
 
+let boton = document.querySelector(".boton");
+let contenedor1 = document.querySelector(".contenedor1");
+let contenedor2 = document.querySelector(".contenedor2");
+
+contenedor1.addEventListener("mouseup", ()=>{
+    alert("contenedor azul");
+}, true)
+// contenedor2.addEventListener("click", (e)=>{
+//     alert("contenedor rojo");
+//     e.stopPropagation();
+// }, true)
+// boton.addEventListener("click", ()=>{
+//     alert("boton");
+// })
 
 
+// boton.addEventListener("click",(evt)=>{
+    // alert("hola");
+    // console.log(evt)
+// });
+
+// function saludar(){
+    // alert("hola");
+    // boton.removeEventListener("click",saludar);
+// }
                         //  -- pruebas ----------------------------
 
 
