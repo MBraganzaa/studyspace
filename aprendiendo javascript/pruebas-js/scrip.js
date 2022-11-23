@@ -298,13 +298,27 @@
 // document.write(input.getAttribute("type"));
 
 
-let boton = document.querySelector(".boton");
-let contenedor1 = document.querySelector(".contenedor1");
-let contenedor2 = document.querySelector(".contenedor2");
+// let boton = document.querySelector(".boton");
+// let inputtext = document.querySelector(".inputtext");
+// let contenedor1 = document.querySelector(".contenedor1");
+// // // let contenedor2 = document.querySelector(".contenedor2");
 
-contenedor1.addEventListener("mouseup", ()=>{
-    alert("contenedor azul");
-}, true)
+// inputtext.addEventListener("select", (e)=>{
+//     let start = e.target.selectionStart;
+//     let end = e.target.selectionEnd;
+//     let textoSeleccionado = inputtext.value;
+//     contenedor1.innerHTML = textoSeleccionado.substring(start,end);
+// })
+// inputtext.addEventListener("keypress", (e)=>{
+//     console.log("una tecla se preciono y se solto");
+// })
+// inputtext.addEventListener("keyup", (e)=>{
+//     console.log("una tecla dejo de precionarse");
+// },true)
+
+// contenedor1.addEventListener("mouseup", ()=>{
+//     alert("contenedor azul");
+// }, true)
 // contenedor2.addEventListener("click", (e)=>{
 //     alert("contenedor rojo");
 //     e.stopPropagation();
@@ -323,6 +337,16 @@ contenedor1.addEventListener("mouseup", ()=>{
     // alert("hola");
     // boton.removeEventListener("click",saludar);
 // }
+const tiempo = setInterval(() => {
+    document.write("hola");
+}, 2000);
+
+setTimeout(()=>{
+    clearInterval(tiempo);
+}, 7000);
+
+
+
                         //  -- pruebas ----------------------------
 
 

@@ -6,9 +6,6 @@ body{
  }
 .contenedor1 {
     padding: 30px;
-    background-color: blue;
-}
-.contenedor2 {
-    padding: 30px;
-    background-color: red;
+    background-color: #666;
+    color: red;
 }
