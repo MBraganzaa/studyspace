@@ -8,11 +8,12 @@
     <title>eje1 cap 9</title>
 </head>
 <body>
-    <form action="">
-        <input type="text" placeholder="nombre" id="nombre">
-        <input type="email" placeholder="email" id="email">
-        <input type="text" placeholder="materia reprobada" id="materia">
+    <form autocomplete="off" action="">
+        <input type="text" placeholder="nombre" id="nombre" required="">
+        <input type="email" placeholder="email" id="email" required="">
+        <input type="text" placeholder="materia reprobada" id="materia" required="">
         <input type="submit" value="solicitar mesa" id="btn__enviar">
+        <div class="resultado"></div>
     </form>
 
     <script src="eje1.js"></script>
