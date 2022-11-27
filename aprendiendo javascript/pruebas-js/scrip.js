@@ -337,15 +337,23 @@
     // alert("hola");
     // boton.removeEventListener("click",saludar);
 // }
-const tiempo = setInterval(() => {
-    document.write("hola");
-}, 2000);
+// const tiempo = setInterval(() => {
+//     document.write("hola");
+// }, 2000);
 
-setTimeout(()=>{
-    clearInterval(tiempo);
-}, 7000);
+// setTimeout(()=>{
+//     clearInterval(tiempo);
+// }, 7000);
 
-
+try{
+    amfpdafjap
+}
+catch(error){
+    if(3>5){
+    console.log("ha ocurrido un error")
+} else {
+    console.log("paso algo malo")
+}}
 
                         //  -- pruebas ----------------------------
 
