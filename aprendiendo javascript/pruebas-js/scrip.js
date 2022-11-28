@@ -345,15 +345,71 @@
 //     clearInterval(tiempo);
 // }, 7000);
 
-try{
-    amfpdafjap
-}
-catch(error){
-    if(3>5){
-    console.log("ha ocurrido un error")
-} else {
-    console.log("paso algo malo")
-}}
+// try{
+//     amfpdafjap
+// }
+// catch(error){
+//     if(3>5){
+//     console.log("ha ocurrido un error")
+// } else {
+//     console.log("paso algo malo")
+// }}
+
+// function prueba(callback){
+//     callback("roberto");
+// }
+// function decirNombre(nombre){
+//     console.log(nombre);
+// }
+
+// prueba(decirNombre);
+
+
+
+
+// class persona {
+//     constructor(nombre,instagram){
+//         this.nombre = nombre;
+//         this.instagram = instagram;
+//     }
+// }
+
+// let data = [
+//     ["manu","@immanubrz"],
+//     ["tama","@tatama"],
+//     ["ian","@iann02"],
+//     ["paola mares","@paolamares"],
+// ];
+
+// const personas = [];
+
+// for (let i = 0; i < data.length; i++) {
+//     personas[i] = new persona (data[i][0],data[i][1]);  
+// };
+
+// const obtenerPersona = (id,cb)=>{
+//     if (obtenerPersona == undefined){
+//         console.log("no esta definido");
+//     } else {
+//         cb(null,personas[id])
+//     }
+// };
+
+// obtenerPersona(3,(err,persona)=>{
+//     if (err){
+//         console.log(err);
+//     } else {
+//         console.log(persona.nombre);
+//         console.log(persona.instagram);
+//     }
+// })
+
+let nombre = "pedro";
+
+const promesa = new Promise((resolve,reject)=>{
+    if (nombre == pedro){reject("lo siento, el nombre pedro no se encontro")}
+    else {resolve(nombre)};
+})
 
                         //  -- pruebas ----------------------------
 

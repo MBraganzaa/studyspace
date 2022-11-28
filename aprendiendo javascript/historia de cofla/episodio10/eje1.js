@@ -4,6 +4,9 @@ btn.addEventListener("click",()=>{
     let resultado,mensaje;
     let prevRes = parseInt(document.getElementById('nota').value);
     try {
+        if (isNaN(prevRes)){
+            console.log("sos gracioso");
+        }
         mensaje = enviarMensaje(prevRes);
         resultado = validarPuntaje(8,5,prevRes);
 
